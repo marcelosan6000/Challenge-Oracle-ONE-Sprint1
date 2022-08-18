@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Challenge ONE - Encriptador de Texto</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+</head>
+
+  <body>
+    <main>
+      <div class="grid-caja">
+        
+        <div class="col-logo-alura">
+          <img src="img/logo-alura.svg" />
+
+        </div>
+        <div class="col-entrada-texto">
+          <textarea
+            cols="30"
+            rows="7"
+            id="mensaje"
+            placeholder="Ingrese aquí el texto a encriptar..."
+          ></textarea>
+          <img src="img/alerta.svg" /><p>Escriba solamente letras minúsculas y sin acento.</p>
+          <div class="div-botones">
+            <button class="btn-encriptar" id="btn-encriptar">ENCRIPTAR</button>
+            <button class="btn-desencriptar" id="btn-desencriptar">
+              DESENCRIPTAR
+            </button>
+          </div>
+        </div>
+
+        <div class="col-salida-texto" id="col-salida">
+          <div>
+            <p class="salida-texto-encriptado" id="salida-texto-encriptado"></p>
+          </div>
+          <div id="div-imagen">
+            <img class="col-salida-texto-imagen" src="img/lupa.svg" />
+            <p class="col-salida-texto-ningun-mensaje">
+              No hay mensajes por aquí...
+            </p>
+            <p class="col-salida-texto-escribe">
+              Aqui aparecerá el texto encriptado - desencriptado...
+            </p>
+          </div>
+          <div id="div-btn-copiar">
+            <button class="btn-copiar" id="btn-copiar">COPIAR</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <img src="img/alura_oracle.svg" />
+      <p>&copy 2022 - ONE -@ Adrian Marcelo Sanchez -</p>
+    </footer>
+  </body>
+  <script src="encriptador.js"></script>
+</html>
